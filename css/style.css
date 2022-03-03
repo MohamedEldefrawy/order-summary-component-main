@@ -1,12 +1,12 @@
 /*Fonts*/
 @font-face {
     font-family: RedHat-Bold;
-    src: url("/fonts/RedHatDisplay-Bold.ttf");
+    src: url("../fonts/RedHatDisplay-Bold.ttf");
 }
 
 @font-face {
     font-family: RedHat-Regular;
-    src: url("/fonts/RedHatDisplay-Regular.ttf");
+    src: url("../fonts/RedHatDisplay-Regular.ttf");
 }
 
 

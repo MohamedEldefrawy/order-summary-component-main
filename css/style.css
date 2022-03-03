@@ -1,0 +1,407 @@
+/*Fonts*/
+@font-face {
+    font-family: RedHat-Bold;
+    src: url("/fonts/RedHatDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: RedHat-Regular;
+    src: url("/fonts/RedHatDisplay-Regular.ttf");
+}
+
+
+body {
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size:  contain;
+    background-color: hsl(225, 100%, 94%);
+
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.attribution {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-cover {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-text-box {
+    color: hsl(224, 23%, 55%);
+    font-family: RedHat-Regular;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.card-text {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    width: 25%;
+    border-radius: 15px;
+}
+
+.card-header {
+    font-family: RedHat-Bold;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-pricing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    width: 70%;
+    padding: 15px;
+    font-family: RedHat-Regular;
+}
+
+.card-pricing-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-info {
+    margin-left: 10px;
+}
+
+.plan-name {
+    margin: 0;
+    font-family: RedHat-Bold;
+}
+
+.plan-price {
+    margin: 0;
+}
+
+.plan-change {
+    color: hsl(245, 75%, 52%);
+}
+
+.card-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+    margin: auto;
+    padding: 15px;
+}
+
+.btn-proceed {
+    width: 100%;
+    height: 3em;
+    border: none;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-family: RedHat-Bold;
+    border-radius: 10px;
+    box-shadow: 0 0 1em 0em #dbd7fc;
+    margin-bottom: 1em;
+    font-size: 1em;
+}
+
+.btn-cancel {
+    width: 100%;
+    height: 3em;
+    border: none;
+    background-color: white;
+    color: #d2d8e4;
+    font-family: RedHat-Bold;
+    font-size: 1em;
+}
+
+.btn-proceed:hover {
+    background-color: #766cf2;
+    cursor: pointer;
+    transition: background-color 1000ms;
+}
+
+.btn-cancel,
+.plan-change {
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .card {
+        width: 45%;
+    }
+
+    .attribution {
+        margin: 2em;
+        font-size: 1.2em;
+    }
+
+    .plan-info {
+        margin-left: 1em;
+    }
+
+    .card-pricing {
+        padding: 1em;
+    }
+
+    .plan-name,
+    .plan-price {
+        font-size: 1.2em;
+    }
+
+    .plan-change {
+        font-size: 1.2em;
+    }
+
+    .btn-proceed {
+        margin-bottom: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .btn-cancel {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        width: 50%;
+    }
+
+    .attribution {
+        margin: 2em;
+        font-size: 1em;
+    }
+
+
+    .plan-info {
+        margin-left: 1em;
+    }
+
+    .card-pricing {
+        padding: 1em;
+    }
+
+    .plan-name,
+    .plan-price {
+        font-size: 1.2em;
+    }
+
+    .plan-change {
+        font-size: 1.2em;
+    }
+
+    .btn-proceed {
+        margin-bottom: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .btn-cancel {
+        font-size: 1.2em;
+    }
+
+}
+
+@media (min-width: 551px) and (max-width: 767px) {
+    body {
+        background-image: url("/images/pattern-background-mobile.svg");
+    }
+    .card {
+        width: 45%;
+    }
+
+    .attribution {
+        margin: 2em;
+        font-size: 0.9em;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+    }
+
+    .plan-info {
+        margin-left: 0.5em;
+    }
+
+    .card-pricing {
+        padding: 1em;
+    }
+
+    .plan-name,
+    .plan-price {
+        font-size: 0.9em;
+
+    }
+
+    .plan-change {
+        font-size: 0.9em;
+        margin-left: 0.5em;
+
+    }
+
+    .btn-proceed {
+        margin-bottom: 1.5em;
+        font-size: 0.9em;
+    }
+
+    .btn-cancel {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 550px) {
+    body {
+        background-image: url("/images/pattern-background-mobile.svg");
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .attribution {
+        margin: 25px;
+        font-size: 0.8em;
+    }
+
+    .card-text {
+        font-size: 1em;
+    }
+
+    .plan-info {
+        margin-left: 10px;
+    }
+
+    .card-pricing {
+        padding: 15px;
+    }
+
+    .btn-proceed {
+        height: 3em;
+        margin-bottom: 1.5em;
+        font-size: 1em;
+    }
+
+    .btn-cancel {
+        height: 3em;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-image: url("/images/pattern-background-mobile.svg");
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .attribution {
+        margin: 15px;
+        font-size: 0.7em;
+    }
+
+    .card-text {
+        font-size: 1em;
+    }
+
+    .plan-info {
+        margin-left: 10px;
+    }
+
+    .card-pricing {
+        padding: 15px;
+    }
+
+    .btn-proceed {
+        height: 3em;
+        margin-bottom: 1.5em;
+        font-size: 1em;
+    }
+
+    .btn-cancel {
+        height: 3em;
+        font-size: 1em;
+    }
+
+}
+
+@media (min-width: 280px ) and (max-width: 319px) {
+    body {
+        background-image: url("/images/pattern-background-mobile.svg");
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .attribution {
+        margin: 0.5em;
+        font-size: 0.7em;
+    }
+
+    .card-text {
+        font-size: 0.8em;
+    }
+
+    .plan-info {
+        margin-left: 5px;
+    }
+
+    .card-pricing {
+        padding: 1em;
+    }
+
+    .btn-proceed {
+        height: 3em;
+        margin-bottom: 1.5em;
+        font-size: 0.8em;
+    }
+
+    .btn-cancel {
+        height: 3em;
+        font-size: 0.8em;
+    }
+
+    .plan-name,
+    .plan-change,
+    .plan-price {
+        font-size: 0.7em;
+        margin-left: 5px;
+    }
+}

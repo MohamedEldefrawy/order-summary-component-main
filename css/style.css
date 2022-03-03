@@ -15,7 +15,7 @@ body {
     overflow: hidden;
     padding: 0;
     margin: 0;
-    background-image: url("/images/pattern-background-desktop.svg");
+    background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size:  contain;
     background-color: hsl(225, 100%, 94%);
@@ -239,7 +239,7 @@ figcaption {
 
 @media (min-width: 551px) and (max-width: 767px) {
     body {
-        background-image: url("/images/pattern-background-mobile.svg");
+        background-image: url("../images/pattern-background-mobile.svg");
     }
     .card {
         width: 45%;
@@ -286,7 +286,7 @@ figcaption {
 
 @media (min-width: 481px) and (max-width: 550px) {
     body {
-        background-image: url("/images/pattern-background-mobile.svg");
+        background-image: url("../images/pattern-background-mobile.svg");
     }
 
     .card {
@@ -324,7 +324,7 @@ figcaption {
 
 @media (min-width: 320px) and (max-width: 480px) {
     body {
-        background-image: url("/images/pattern-background-mobile.svg");
+        background-image: url("../images/pattern-background-mobile.svg");
     }
 
     .card {
@@ -363,7 +363,7 @@ figcaption {
 
 @media (min-width: 280px ) and (max-width: 319px) {
     body {
-        background-image: url("/images/pattern-background-mobile.svg");
+        background-image: url("../images/pattern-background-mobile.svg");
     }
 
     .card {

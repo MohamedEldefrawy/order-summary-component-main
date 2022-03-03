@@ -17,17 +17,9 @@ body {
     margin: 0;
     background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
-    background-size:  contain;
+    background-size: contain;
     background-color: hsl(225, 100%, 94%);
 
-}
-
-figure {
-    margin: 0;
-}
-
-figcaption {
-    text-align: center;
 }
 
 .attribution {
@@ -71,6 +63,7 @@ figcaption {
     background-color: white;
     width: 25%;
     border-radius: 15px;
+    text-align: center;
 }
 
 .card-header {
@@ -241,6 +234,7 @@ figcaption {
     body {
         background-image: url("../images/pattern-background-mobile.svg");
     }
+
     .card {
         width: 45%;
     }
